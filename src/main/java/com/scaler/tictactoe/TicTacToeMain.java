@@ -62,9 +62,9 @@ public class TicTacToeMain {
             }
         }
 
-        System.out.println("Game has ended. Result is: ");
+        System.out.println("Game has ended. Winner is: ");
         if (!gameController.getGameStatus(game).equals(GameStatus.DRAW)) {
-            System.out.println(gameController.getWinner(game));
+            System.out.println(gameController.getWinner(game).getName());
         }
     }
 }
